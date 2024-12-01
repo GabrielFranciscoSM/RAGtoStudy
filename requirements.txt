@@ -1,1 +1,8 @@
 huggingface_hub==0.25.2
+pymilvus 
+sentence-transformers 
+huggingface-hub 
+langchain_community 
+langchain-text-splitters 
+pypdf 
+tqdm
