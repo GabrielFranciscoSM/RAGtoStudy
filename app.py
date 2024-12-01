@@ -6,6 +6,11 @@ For more information on `huggingface_hub` Inference API support, please check th
 """
 client = InferenceClient("HuggingFaceH4/zephyr-7b-beta")
 
+from langchain_community.document_loaders import PyPDFLoader
+
+loader = PyPDFLoader("Brezis.pdf")
+docs = loader.load()
+print(len(docs))
 
 def respond(
     message,
